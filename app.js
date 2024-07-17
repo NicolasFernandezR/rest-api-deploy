@@ -9,10 +9,7 @@ app.use(cors({
     origin: (origin, callback) => {
         const ACCEPTED_ORIGINS = [
             'http://localhost:8080',
-            'http://localhost:1234',
-            'https://movies.com',
-            'https://midu.dev',
-            'http://127.0.0.1:5500/Web/index.html'
+            'http://localhost:3000'
         ];
 
         if (ACCEPTED_ORIGINS.includes(origin)) {
