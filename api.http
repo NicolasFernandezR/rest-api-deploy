@@ -2,10 +2,10 @@
 GET http://localhost:3000/movies
 
 ### recuperar peliculas por id
-GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+GET http://localhost:3000/movies/033039b5-49ed-11ef-a033-18c04d996b75
 
 ### recuperar todas las peliculas por generos
-GET http://localhost:3000/movies?genre=action
+GET http://localhost:3000/movies?genre=ActioN
 
 ### POST crear una pelicula 
 POST http://localhost:3000/movies
@@ -21,15 +21,16 @@ Content-Type: application/json
     "genre": [
         "Crime",
         "Drama"
-    ]
+    ],
+    "rate":9.7
 }
 
 ### actualizar una pelicula
-PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:3000/movies/033039b5-49ed-11ef-a033-18c04d996b75
 Content-Type: application/json
 
 {
-    "year": 2000
+    "director": "nicolas"
 }
 
 ###eliminar pelicula
